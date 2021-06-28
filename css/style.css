@@ -73,8 +73,8 @@ nav ul li {
   height: 500px;
   position: relative;
   width: 100%;
-  transform-origin: bottom left;
-  transform: skewY(5deg);
+  transform-origin: top left;
+  transform: skewY(3deg);
 }
 
 #about-me::after {
@@ -87,7 +87,7 @@ nav ul li {
   right: 0;
   bottom: 0;
   left: 0;
-  transform-origin: top right;
+  transform-origin: bottom right;
   transform: skewY(1deg);
   z-index: -1;
 }
@@ -97,7 +97,7 @@ nav ul li {
   font-size: 80px;
   text-align: center;
   font-weight: 300;
-  transform: skewY(-5deg);
+  transform: skewY(-3deg);
 }
 
 /******************** KEYFRAMES ********************/
