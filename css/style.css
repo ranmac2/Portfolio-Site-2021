@@ -73,7 +73,6 @@ nav ul li {
   height: 500px;
   position: relative;
   width: 100%;
-  transform-origin: top left;
   transform: skewY(3deg);
 }
 
@@ -87,8 +86,6 @@ nav ul li {
   right: 0;
   bottom: 0;
   left: 0;
-  transform-origin: bottom right;
-  transform: skewY(1deg);
   z-index: -1;
 }
 
@@ -98,6 +95,75 @@ nav ul li {
   text-align: center;
   font-weight: 300;
   transform: skewY(-3deg);
+  padding-top: 35px;
+}
+
+#second-container {
+  background-color: red;
+  height: 500px;
+  position: relative;
+  width: 100%;
+  transform: skewY(-3deg);
+}
+
+#second-container::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#second-container h1 {
+  font-family: nickainley;
+  font-size: 80px;
+  text-align: center;
+  font-weight: 300;
+  transform: skewY(3deg);
+  padding-top: 35px;
+}
+
+#third-container {
+  background-color: white;
+  height: 500px;
+  position: relative;
+  width: 100%;
+  transform: skewY(3deg);
+}
+
+#third-container::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#third-container h1 {
+  font-family: nickainley;
+  font-size: 80px;
+  text-align: center;
+  font-weight: 300;
+  transform: skewY(-3deg);
+  padding-top: 35px;
+}
+
+#home-footer {
+  color: white;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  padding-top: 50px;
 }
 
 /******************** KEYFRAMES ********************/
