@@ -129,9 +129,15 @@ nav ul li a {
   padding-top: 35px;
 }
 
+#leaf-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 #leaf-icons img {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
 }
 
 /******************** SECOND CONTAINER ********************/
