@@ -5,10 +5,15 @@
   src: url("../fonts/Nickainley-Normal.otf");
 }
 
+@font-face {
+  font-family: glacial-indifference;
+  src: url("../fonts/GlacialIndifference-Regular.otf");
+}
+
 /******************** SPLASH PAGE ********************/
 
 body {
-  background-color: black;
+  background-color: white;
 }
 
 #titlepage-img {
@@ -21,41 +26,83 @@ body {
 /******************** HOMEPAGE ********************/
 
 header {
-  background-color: black;
-  height: 125px;
+  background: none;
+  height: 225px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #logo {
   height: 125px;
   width: 125px;
-  margin-top: 6px;
-  margin-left: 50px;
 }
 
-nav {
-  margin-right: 50px;
+nav ul {
+  margin-right: 12px;
+  padding-bottom: 15px;
 }
 
 nav ul li {
   display: inline;
 }
 
-#portfolio-link-image {
-  height: 125px;
-  width: 125px;
+nav ul li a {
+  font-family: glacial-indifference;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 50px;
 }
 
-#contact-me-link-image {
-  height: 125px;
-  width: 125px;
+#hero {
+  background-image: url("../img/kelowna-background.jpg");
+  border: 3px solid black;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#hero-image {
-  display: block;
+#outer-circle {
+  border: 3px solid rgba(255, 16, 16, 60%);
+  border-radius: 50%;
+  height: 550px;
+  width: 550px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 65%);
+}
+
+#inner-circle {
+  border: 3px solid rgba(0, 0, 0, 60%);
+  border-radius: 50%;
+  height: 515px;
+  width: 515px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#inner-circle h1 {
+  font-family: nickainley;
+  font-weight: 300;
+  text-align: center;
+  font-size: 120px;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-right: 10px;
+  color: rgb(34, 33, 33);
+}
+
+#inner-circle p {
+  font-family: glacial-indifference;
+  text-align: center;
+  width: 300px;
+  font-size: 25px;
+  color: rgb(34, 33, 33);
 }
 
 #homepage-header {
@@ -70,23 +117,8 @@ nav ul li {
 
 #about-me {
   background-color: white;
-  height: 500px;
-  position: relative;
+  height: 800px;
   width: 100%;
-  transform: skewY(3deg);
-}
-
-#about-me::after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background: inherit;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
 }
 
 #about-me h1 {
@@ -94,29 +126,21 @@ nav ul li {
   font-size: 80px;
   text-align: center;
   font-weight: 300;
-  transform: skewY(-3deg);
   padding-top: 35px;
 }
+
+#leaf-icons img {
+  height: 250px;
+  width: 250px;
+}
+
+/******************** SECOND CONTAINER ********************/
 
 #second-container {
   background-color: red;
   height: 500px;
-  position: relative;
   width: 100%;
-  transform: skewY(-3deg);
-}
-
-#second-container::after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background: inherit;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+  transform: skewY(4deg);
 }
 
 #second-container h1 {
@@ -124,29 +148,16 @@ nav ul li {
   font-size: 80px;
   text-align: center;
   font-weight: 300;
-  transform: skewY(3deg);
   padding-top: 35px;
+  transform: skewY(-4deg);
 }
+
+/******************** THIRD CONTAINER ********************/
 
 #third-container {
   background-color: white;
   height: 500px;
-  position: relative;
   width: 100%;
-  transform: skewY(3deg);
-}
-
-#third-container::after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background: inherit;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
 }
 
 #third-container h1 {
@@ -154,12 +165,13 @@ nav ul li {
   font-size: 80px;
   text-align: center;
   font-weight: 300;
-  transform: skewY(-3deg);
   padding-top: 35px;
 }
 
+/******************** FOOTER ********************/
+
 #home-footer {
-  color: white;
+  background-color: red;
   text-align: center;
   height: 100px;
   width: 100%;
