@@ -127,25 +127,39 @@
       </div>
       <div id="contact">
         <h1>Get In Touch</h1>
-        <form id="contact-form" onsubmit="return false">
-          <input
-            type="text"
-            placeholder="Enter your first name"
-            id="first-name"
-          />
-          <br />
-          <input
-            type="text"
-            placeholder="Enter your last name"
-            id="last-name"
-          />
-          <br />
-          <input type="email" placeholder="Enter your email" id="email" />
-          <br />
-          <textarea> </textarea>
-          <br />
-          <button onclick="sendContact();">Send Message</button>
-        </form>
+        <div class="contact-content">
+          <form id="contact-form" onsubmit="return false">
+            <input
+              type="text"
+              placeholder="Enter your first name"
+              id="first-name"
+            />
+            <br />
+            <input
+              type="text"
+              placeholder="Enter your last name"
+              id="last-name"
+            />
+            <br />
+            <input type="email" placeholder="Enter your email" id="email" />
+            <br />
+            <textarea> </textarea>
+            <br />
+            <button onclick="sendContact();">Send Message</button>
+          </form>
+          <div id="social-media">
+            <img
+              id="github-thumbnail"
+              src="../img/github-dark-green.png"
+              alt="github-thumbnail"
+            />
+            <img
+              id="linkedin-thumbnail"
+              src="../img/linked-in-logo.png"
+              alt="linked-in-logo"
+            />
+          </div>
+        </div>
       </div>
       <footer id="home-footer">
         <p>Copyright 2021 | Randy MacLean</p>
