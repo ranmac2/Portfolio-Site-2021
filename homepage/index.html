@@ -31,25 +31,125 @@
         </div>
       </div>
       <div id="about-me">
-        <h1>About Me</h1>
-        <div id="leaf-icons">
-          <img src="../img/html-circle.png" alt="html-circle" />
-          <img src="../img/css-circle.png" alt="css-circle" />
-          <img src="../img/javascript-circle.png" alt="javascript-circle" />
-          <img src="../img/wordpress-circle.png" alt="wordpress-circle" />
-          <img src="../img/shopify-circle.png" alt="shopify-circle" />
-          <img src="../img/flutter-circle.png" alt="flutter-circle" />
+        <h1>What I'm All About</h1>
+        <div id="language-icons">
+          <div class="language-logo">
+            <img src="../img/html-dark-green.png" alt="html-green" />
+            <h2>HTML</h2>
+          </div>
+          <div class="language-logo">
+            <img src="../img/css-dark-green.png" alt="css-green" />
+            <h2>CSS</h2>
+          </div>
+          <div class="language-logo">
+            <img
+              src="../img/javascript-dark-green.png"
+              alt="javascript-green"
+            />
+            <h2>JavaScript</h2>
+          </div>
+          <div class="language-logo">
+            <img src="../img/react-dark-green.png" alt="react-green" />
+            <h2>React</h2>
+          </div>
+          <div class="language-logo">
+            <img src="../img/flutter-dark-green.png" alt="flutter-green" />
+            <h2>Flutter</h2>
+          </div>
+          <div class="language-logo">
+            <img src="../img/wordpress-dark-green.png" alt="wordpress-green" />
+            <h2>WordPress</h2>
+          </div>
+        </div>
+        <div id="description-and-picture">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sem
+            metus, convallis at porttitor eget, fermentum eu magna. Proin ac
+            tellus ac orci faucibus commodo. Ut eu pretium erat. Suspendisse et
+            augue at mauris interdum suscipit at sit amet diam. Nam tincidunt
+            tristique leo ac volutpat. Proin id egestas mi. Nunc eget pretium
+            massa, ut hendrerit libero. Nullam et malesuada nisi. Morbi
+            fermentum tortor eget augue egestas, sed auctor neque imperdiet.
+          </p>
+          <img
+            id="profile-pic"
+            src="../img/profile-pic-circle.png"
+            alt="profile-picture"
+          />
         </div>
       </div>
-      <div id="second-container">
-        <h1>Second Container</h1>
+      <div id="portfolio">
+        <h1>Featured Projects</h1>
+        <div id="featured-portfolio">
+          <div class="thumbnail">
+            <img
+              id="portfolio-thumbnail"
+              src="../img/portfolio-thumbnail.jpg"
+              alt="portfolio-thumbnail"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              id="unplugged-thumbnail"
+              src="../img/unplugged-thumbnail.jpg"
+              alt="unplugged-thumbnail"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              id="clima-thumbnail"
+              src="../img/clima-thumbnail.png"
+              alt="clima-thumbnail"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              id="bmi-thumbnail"
+              src="../img/bmi-thumbnail.png"
+              alt="bmi-thumbnail"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              id="jammming-thumbnail"
+              src="../img/jammming-thumbnail.png"
+              alt="jammming-thumbnail"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              id="ravenous-thumbnail"
+              src="../img/ravenous-thumbnail.png"
+              alt="ravenous-thumbnail"
+            />
+          </div>
+        </div>
       </div>
-      <div id="third-container">
-        <h1>Third Container</h1>
+      <div id="contact">
+        <h1>Get In Touch</h1>
+        <form id="contact-form" onsubmit="return false">
+          <input
+            type="text"
+            placeholder="Enter your first name"
+            id="first-name"
+          />
+          <br />
+          <input
+            type="text"
+            placeholder="Enter your last name"
+            id="last-name"
+          />
+          <br />
+          <input type="email" placeholder="Enter your email" id="email" />
+          <br />
+          <textarea> </textarea>
+          <br />
+          <button onclick="sendContact();">Send Message</button>
+        </form>
       </div>
+      <footer id="home-footer">
+        <p>Copyright 2021 | Randy MacLean</p>
+      </footer>
     </main>
-    <footer id="home-footer">
-      <p>Copyright 2021 | Randy MacLean</p>
-    </footer>
   </body>
 </html>
