@@ -134,6 +134,14 @@ nav ul li a {
   width: 100%;
 }
 
+.about-me-content {
+  position: relative;
+}
+
+.appear {
+  left: 0;
+}
+
 #about-me h1 {
   font-family: nickainley;
   color: white;
@@ -144,14 +152,14 @@ nav ul li a {
   padding-top: 35px;
 }
 
-#language-icons {
+.language-icons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-#language-icons img {
+.language-logo img {
   height: 150px;
   width: 150px;
 }
@@ -168,13 +176,13 @@ nav ul li a {
   margin: 0 auto;
 }
 
-#description-and-picture {
+.description-and-picture {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-#description-and-picture p {
+.description-and-picture p {
   font-family: glacial-indifference;
   font-size: 20px;
   text-align: center;
@@ -451,11 +459,17 @@ button {
   }
 }
 
-@keyframes wipe-enter {
-  0% {
-    transform: scale(0, 0.025);
+@keyframes slide-right {
+  from {
+    left: -100px;
   }
-  50% {
-    transform: scale(1, 0.025);
+  to {
+    left: 0;
   }
+}
+.slide-right-element {
+  animation: slide-right 1.4s forwards;
+}
+.left-start {
+  left: -100px;
 }
