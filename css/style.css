@@ -10,11 +10,19 @@
   src: url("../fonts/GlacialIndifference-Regular.otf");
 }
 
-/******************** SPLASH PAGE ********************/
+/******************** MAIN STYLES ********************/
 
+html {
+  margin-top: 0;
+  padding-top: 0;
+}
 body {
+  margin-top: 0;
+  padding-top: 0;
   background-color: white;
 }
+
+/******************** SPLASH PAGE ********************/
 
 #titlepage-img {
   display: block;
@@ -25,21 +33,38 @@ body {
 
 /******************** HOMEPAGE ********************/
 
+#homepage-main {
+  animation: homepageTransitionIn 2s;
+}
+
 /******************** HEADER ********************/
 
 header {
-  /* background-image: url("../img/background-microchip-flipped.jpg");
-  background-size: cover; */
   background-color: rgb(34, 33, 33);
   height: 200px;
   width: 100%;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  animation: homepageTransitionIn 2s;
+}
+
+#homepage-header {
+  background-color: rgb(34, 33, 33);
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  /* transition: 0.2s; */
+  font-size: 25px;
+  z-index: 1;
+  top: 0;
+  right: 2px;
+  left: 11px;
   border-top: 3px solid black;
-  border-left: 3px solid black;
   border-right: 3px solid black;
+  animation: homepageTransitionIn 2s;
 }
 
 #logo {
@@ -60,7 +85,6 @@ nav ul li a {
   font-family: glacial-indifference;
   color: white;
   text-decoration: none;
-  font-size: 25px;
   padding: 50px;
 }
 
@@ -68,7 +92,9 @@ nav ul li a {
 
 #hero {
   background-image: url("../img/background-microchip.jpg");
-  border: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
   width: 100%;
   height: 650px;
   display: flex;
@@ -115,18 +141,9 @@ nav ul li a {
   color: rgb(34, 33, 33);
 }
 
-#homepage-header {
-  animation: homepageTransitionIn 2s;
-}
-
-#homepage-main {
-  animation: homepageTransitionIn 2s;
-}
-
 /******************** ABOUT ME ********************/
 
 #about-me {
-  /* background-image: url("../img/background-microchip-flipped.jpg"); */
   background-color: rgb(44, 46, 46);
   border-right: 3px solid black;
   border-left: 3px solid black;
@@ -134,12 +151,15 @@ nav ul li a {
   width: 100%;
 }
 
-.about-me-content {
-  position: relative;
+.fade-right {
+  opacity: 0;
+  transition: opacity 1.25s ease-in, transform 0.75s ease-in;
+  transform: translateX(-50%);
 }
 
-.appear {
-  left: 0;
+.fade-right.appear {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 #about-me h1 {
@@ -195,7 +215,7 @@ nav ul li a {
   border-radius: 25%;
 }
 
-#profile-pic {
+.profile-pic {
   height: 350px;
   border: 10px double white;
   border-radius: 50%;
@@ -210,6 +230,17 @@ nav ul li a {
   border-left: 3px solid black;
   height: 950px;
   width: 100%;
+}
+
+.fade-left {
+  opacity: 0;
+  transition: opacity 1.25s ease-in, transform 0.75s ease-in;
+  transform: translateX(50%);
+}
+
+.fade-left.appear {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 #portfolio h1 {
@@ -299,6 +330,17 @@ nav ul li a {
   height: 550px;
   width: 100%;
   border: 3px solid black;
+}
+
+.fade-up {
+  opacity: 0;
+  transition: opacity 1.25s ease-in, transform 0.75s ease-in;
+  transform: translateY(25%);
+}
+
+.fade-up.appear {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #contact h1 {
@@ -415,8 +457,6 @@ button {
 /******************** FOOTER ********************/
 
 #home-footer {
-  /* background-image: url("../img/background-microchip.jpg");
-  background-size: cover; */
   background-color: rgb(34, 33, 33);
   height: 35px;
   width: 100%;
@@ -457,19 +497,4 @@ button {
   to {
     opacity: 1;
   }
-}
-
-@keyframes slide-right {
-  from {
-    left: -100px;
-  }
-  to {
-    left: 0;
-  }
-}
-.slide-right-element {
-  animation: slide-right 1.4s forwards;
-}
-.left-start {
-  left: -100px;
 }
