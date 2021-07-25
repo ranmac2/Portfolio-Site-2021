@@ -20,7 +20,7 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
+    if (document.body.scrollTop > 825 || document.documentElement.scrollTop > 825) {
         document.getElementById("homepage-header").style.fontSize = "25px";
         document.getElementById("homepage-header").style.height = "115px";
         document.getElementById("homepage-header").style.justifyContent = "space-between";
