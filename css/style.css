@@ -10,21 +10,37 @@
   src: url("../fonts/GlacialIndifference-Regular.otf");
 }
 
+@font-face {
+  font-family: komika;
+  src: url("../fonts/KOMIKAX_.ttf");
+}
+
+@font-face {
+  font-family: qiba;
+  src: url("../fonts/qiba-serif-2.ttf");
+}
 /******************** MAIN STYLES ********************/
 
 html {
-  margin-top: 0;
-  padding-top: 0;
+  background-color: white;
 }
-body {
+
+#titlepage {
   margin-top: 0;
   padding-top: 0;
   background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /******************** SPLASH PAGE ********************/
 
-#titlepage-img {
+body a img {
   display: block;
   margin: 0 auto;
   padding-top: 50px;
@@ -40,41 +56,39 @@ body {
 /******************** HEADER ********************/
 
 header {
-  background-color: rgb(34, 33, 33);
+  background-color: transparent;
   height: 200px;
   width: 100%;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
-  animation: homepageTransitionIn 2s;
+  position: absolute;
 }
 
 #homepage-header {
-  background-color: rgb(34, 33, 33);
   height: 200px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   position: fixed;
-  /* transition: 0.2s; */
   font-size: 25px;
   z-index: 1;
   top: 0;
-  right: 2px;
-  left: 11px;
-  border-top: 3px solid black;
-  border-right: 3px solid black;
+  width: 100%;
   animation: homepageTransitionIn 2s;
 }
 
 #logo {
-  height: 125px;
-  width: 125px;
+  height: 115px;
+  width: 115px;
+  margin-left: 25px;
+  padding-bottom: 5px;
+  transition: transform 0.2s;
+}
+
+#logo:hover {
+  transform: scale(1.1);
 }
 
 nav ul {
-  margin-right: 12px;
-  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 nav ul li {
@@ -91,20 +105,30 @@ nav ul li a {
 /******************** HERO SECTION ********************/
 
 #hero {
-  background-image: url("../img/background-microchip.jpg");
-  border-left: 3px solid black;
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
+  background-image: url("../img/kelowna-trestles.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   width: 100%;
-  height: 650px;
+  height: 850px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.color-layer {
+  background-color: rgba(255, 33, 33, 0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #outer-circle {
   background-color: rgb(255, 22, 22);
-  border: 3px solid white;
+  border: 3px solid black;
   border-radius: 50%;
   height: 550px;
   width: 550px;
@@ -138,17 +162,21 @@ nav ul li a {
   text-align: center;
   width: 300px;
   font-size: 25px;
-  color: rgb(34, 33, 33);
+  color: white;
 }
 
 /******************** ABOUT ME ********************/
 
 #about-me {
-  background-color: rgb(44, 46, 46);
-  border-right: 3px solid black;
-  border-left: 3px solid black;
+  background-color: white;
   height: 800px;
   width: 100%;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .fade-right {
@@ -163,13 +191,14 @@ nav ul li a {
 }
 
 #about-me h1 {
-  font-family: nickainley;
-  color: white;
+  font-family: glacial-indifference;
+  color: rgb(34, 33, 33);
   font-size: 70px;
   text-align: center;
   font-weight: 300;
   margin: 0;
   padding-top: 35px;
+  transition: 0.2s;
 }
 
 .language-icons {
@@ -182,6 +211,11 @@ nav ul li a {
 .language-logo img {
   height: 150px;
   width: 150px;
+  transition: transform 0.2s;
+}
+
+.language-logo img:hover {
+  transform: scale(1.1);
 }
 
 .language-logo {
@@ -192,7 +226,7 @@ nav ul li a {
 
 .language-logo h2 {
   font-family: glacial-indifference;
-  color: white;
+  color: rgb(34, 33, 33);
   margin: 0 auto;
 }
 
@@ -206,18 +240,21 @@ nav ul li a {
   font-family: glacial-indifference;
   font-size: 20px;
   text-align: center;
+  color: white;
   background-color: rgb(255, 22, 22);
-  height: 300px;
-  margin-top: 75px;
+  height: 200px;
+  margin-top: 100px;
   margin-left: 50px;
-  padding: 25px 25px 0 25px;
-  border: 10px double white;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 10px double rgb(34, 33, 33);
   border-radius: 25%;
 }
 
 .profile-pic {
   height: 350px;
-  border: 10px double white;
+  border: 10px double rgb(34, 33, 33);
   border-radius: 50%;
   margin: 75px 30px 0 50px;
 }
@@ -225,9 +262,7 @@ nav ul li a {
 /******************** PORTFOLIO ********************/
 
 #portfolio {
-  background-color: rgb(34, 34, 34);
-  border-right: 3px solid black;
-  border-left: 3px solid black;
+  background-color: white;
   height: 950px;
   width: 100%;
 }
@@ -244,8 +279,8 @@ nav ul li a {
 }
 
 #portfolio h1 {
-  font-family: nickainley;
-  color: white;
+  font-family: glacial-indifference;
+  color: rgb(34, 33, 33);
   font-size: 70px;
   text-align: center;
   font-weight: 300;
@@ -326,10 +361,8 @@ nav ul li a {
 /******************** CONTACT ********************/
 
 #contact {
-  background-image: url("../img/background-microchip-flipped.jpg");
-  height: 550px;
+  background-color: white;
   width: 100%;
-  border: 3px solid black;
 }
 
 .fade-up {
@@ -345,7 +378,7 @@ nav ul li a {
 
 #contact h1 {
   font-family: nickainley;
-  color: white;
+  color: rgb(34, 33, 33);
   font-size: 70px;
   text-align: center;
   font-weight: 300;
@@ -368,7 +401,7 @@ nav ul li a {
   justify-content: center;
   background-color: rgb(255, 22, 22);
   padding: 35px;
-  border: 5px double white;
+  border: 5px double rgb(34, 33, 33);
   border-radius: 4px;
   margin-bottom: 60px;
   width: 350px;
@@ -425,7 +458,7 @@ button {
 
 #social-media p {
   font-family: glacial-indifference;
-  color: white;
+  color: rgb(34, 33, 33);
   font-size: 30px;
   text-align: center;
   width: 400px;
@@ -457,20 +490,17 @@ button {
 /******************** FOOTER ********************/
 
 #home-footer {
-  background-color: rgb(34, 33, 33);
-  height: 35px;
+  background-color: white;
+  height: 15px;
   width: 100%;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
 }
 
 #home-footer p {
   font-family: glacial-indifference;
+  font-size: 12px;
   text-align: center;
-  padding-top: 7px;
   margin: 0;
-  color: white;
+  color: rgb(34, 33, 33);
 }
 
 /******************** KEYFRAMES ********************/

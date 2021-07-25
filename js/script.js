@@ -20,20 +20,25 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("homepage-header").style.fontSize = "20px";
-        document.getElementById("homepage-header").style.flexDirection = "row";
-        document.getElementById("homepage-header").style.height = "65px";
-        document.getElementById("logo").style.height = "75px";
-        document.getElementById("logo").style.width = "75px";
+    if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
+        document.getElementById("homepage-header").style.fontSize = "25px";
+        document.getElementById("homepage-header").style.height = "115px";
         document.getElementById("homepage-header").style.justifyContent = "space-between";
         document.getElementById("homepage-header").style.zIndex= "1";
+        document.getElementById("homepage-header").style.backgroundColor = "white";
+        document.getElementsByTagName("a")[0].style.color = "rgb(34,33,33)";
+        document.getElementsByTagName("a")[1].style.color = "rgb(34,33,33)";
+        document.getElementsByTagName("a")[2].style.color = "rgb(34,33,33)";
+        document.getElementById("logo").src = "../img/red-logo-2.png";
+        
     } else {
         document.getElementById("homepage-header").style.fontSize = "25px";
-        document.getElementById("homepage-header").style.flexDirection = "column";
         document.getElementById("homepage-header").style.height = "200px";
-        document.getElementById("logo").style.height = "125px";
-        document.getElementById("logo").style.width = "125px";
+        document.getElementById("homepage-header").style.backgroundColor = "transparent";
+        document.getElementsByTagName("a")[0].style.color = "white";
+        document.getElementsByTagName("a")[1].style.color = "white";
+        document.getElementsByTagName("a")[2].style.color = "white";
+        document.getElementById("logo").src = "../img/red-logo-3.png";
     }
 }
 
