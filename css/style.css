@@ -105,7 +105,7 @@ nav ul li a {
 /******************** HERO SECTION ********************/
 
 #hero {
-  background-image: url("../img/kelowna-trestles.jpg");
+  background-image: url("../img/background-bridge.jpg");
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -169,7 +169,7 @@ nav ul li a {
 
 #portfolio {
   background-color: rgb(233, 231, 231);
-  height: 2200px;
+  height: 2400px;
   width: 100%;
 }
 
@@ -266,7 +266,7 @@ nav ul li a {
 
 .flip-box-back {
   background-color: rgb(255, 22, 22);
-  border: 5px double white;
+  border: 5px double rgb(34, 33, 33);
   transform: rotateY(180deg);
 }
 
@@ -288,12 +288,39 @@ nav ul li a {
   margin-top: 90px;
 }
 
+.portfolio-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  width: 15%;
+  text-align: center;
+  font-family: nickainley;
+  font-size: 25px;
+  background-color: rgb(233, 231, 231);
+  color: rgb(34, 33, 33);
+  border: 2px solid rgb(34, 33, 33);
+  transition: transform 0.2s;
+}
+
+.portfolio-btn:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
 /******************** ABOUT ME ********************/
 
 #about-me {
-  background-color: white;
-  height: 800px;
+  background-color: rgb(233, 231, 231);
+  height: 875px;
   width: 100%;
+}
+
+#about-me hr {
+  border-top: 2px solid rgb(34, 33, 33);
+  width: 45%;
+  margin-left: 42%;
 }
 
 .about-header {
@@ -315,12 +342,14 @@ nav ul li a {
 
 #about-me h1 {
   font-family: glacial-indifference;
+  background-color: white;
   color: rgb(34, 33, 33);
   font-size: 70px;
   text-align: center;
   font-weight: 300;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   transition: 0.2s;
 }
 
@@ -329,6 +358,7 @@ nav ul li a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 70px;
 }
 
 .language-logo img {
@@ -349,6 +379,8 @@ nav ul li a {
 
 .language-logo h2 {
   font-family: glacial-indifference;
+  font-size: 20px;
+  font-weight: 300;
   color: rgb(34, 33, 33);
   margin: 0 auto;
 }
@@ -363,21 +395,19 @@ nav ul li a {
   font-family: glacial-indifference;
   font-size: 20px;
   text-align: center;
-  color: white;
-  background-color: rgb(255, 22, 22);
+  color: rgb(34, 33, 33);
   height: 200px;
   margin-top: 100px;
   margin-left: 50px;
+  margin-right: 50px;
   padding-top: 50px;
   padding-left: 25px;
   padding-right: 25px;
-  border: 10px double rgb(34, 33, 33);
-  border-radius: 25%;
 }
 
 .profile-pic {
-  height: 350px;
-  border: 10px double rgb(34, 33, 33);
+  height: 300px;
+  border: 3px solid white;
   border-radius: 50%;
   margin: 75px 30px 0 50px;
 }
@@ -401,20 +431,25 @@ nav ul li a {
 }
 
 #contact h1 {
-  font-family: nickainley;
+  font-family: glacial-indifference;
   color: rgb(34, 33, 33);
   font-size: 70px;
   text-align: center;
   font-weight: 300;
   margin: 0;
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .contact-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background-image: url("../img/background-bridge.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 25px 0 0 25px;
 }
 
@@ -464,16 +499,22 @@ textarea {
   resize: vertical;
 }
 
-button {
+.email {
   background-color: rgb(255, 22, 22);
   cursor: pointer;
-  font-family: glacial-indifference;
+  font-family: nickainley;
   color: white;
   font-size: 15px;
   width: 75%;
   border: 1.5px solid white;
   border-radius: 4px;
   padding: 5px;
+  transition: transform 0.2s;
+}
+
+.email:hover {
+  background-color: white;
+  color: rgb(255, 22, 22);
 }
 
 #social-media {
@@ -482,7 +523,7 @@ button {
 
 #social-media p {
   font-family: glacial-indifference;
-  color: rgb(34, 33, 33);
+  color: white;
   font-size: 30px;
   text-align: center;
   width: 400px;

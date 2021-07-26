@@ -25,7 +25,7 @@ function scrollFunction() {
         document.getElementById("homepage-header").style.height = "115px";
         document.getElementById("homepage-header").style.justifyContent = "space-between";
         document.getElementById("homepage-header").style.zIndex= "1";
-        document.getElementById("homepage-header").style.backgroundColor = "white";
+        document.getElementById("homepage-header").style.backgroundColor = "rgba(255,255,255, 0.75)";
         document.getElementsByTagName("a")[0].style.color = "rgb(34,33,33)";
         document.getElementsByTagName("a")[1].style.color = "rgb(34,33,33)";
         document.getElementsByTagName("a")[2].style.color = "rgb(34,33,33)";
