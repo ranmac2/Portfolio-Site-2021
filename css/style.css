@@ -62,7 +62,7 @@ header {
   position: absolute;
 }
 
-#homepage-header {
+#main-header {
   height: 200px;
   display: flex;
   flex-direction: row;
@@ -458,17 +458,11 @@ nav ul li a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(255, 22, 22);
   padding: 35px;
-  border: 5px double rgb(34, 33, 33);
-  border-radius: 4px;
+  margin-top: 75px;
+  margin-right: 50px;
   margin-bottom: 60px;
   width: 350px;
-  transition: transform 0.2s;
-}
-
-#contact-form:hover {
-  transform: scale(1.2);
 }
 
 input {
@@ -503,11 +497,13 @@ textarea {
   background-color: rgb(255, 22, 22);
   cursor: pointer;
   font-family: nickainley;
+  text-align: center;
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   width: 75%;
   border: 1.5px solid white;
   border-radius: 4px;
+  text-decoration: none;
   padding: 5px;
   transition: transform 0.2s;
 }
@@ -521,18 +517,21 @@ textarea {
   padding-bottom: 250px;
 }
 
-#social-media p {
+.contact-paragraph {
   font-family: glacial-indifference;
   color: white;
   font-size: 30px;
   text-align: center;
   width: 400px;
-  position: absolute;
+}
+
+.social-media-icons {
+  display: block;
 }
 
 #github-thumbnail {
-  height: 200px;
-  width: 200px;
+  height: 175px;
+  width: 175px;
   transition: transform 0.2s;
   cursor: pointer;
 }
@@ -542,8 +541,8 @@ textarea {
 }
 
 #linkedin-thumbnail {
-  height: 200px;
-  width: 200px;
+  height: 175px;
+  width: 175px;
   transition: transform 0.2s;
   cursor: pointer;
 }
