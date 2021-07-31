@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <div id="homepage-header">
+      <div id="main-header">
         <img id="logo" src="../img/red-logo-3.png" />
         <nav>
           <ul>
@@ -27,6 +27,32 @@
     <main id="portfolio-main">
       <div class="portfolio-card">
         <h1>Check Out My Work</h1>
+        <div class="tab">
+          <button class="tablinks" onclick="openProjects(event, 'html-css-js')">
+            HTML/CSS/JS
+          </button>
+          <button class="tablinks" onclick="openProjects(event, 'react')">
+            REACT
+          </button>
+          <button class="tablinks" onclick="openProjects(event, 'flutter')">
+            FLUTTER
+          </button>
+        </div>
+
+        <div id="html-css-js" class="tabcontent">
+          <h3>HTML/CSS/JS</h3>
+          <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="react" class="tabcontent">
+          <h3>React</h3>
+          <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="flutter" class="tabcontent">
+          <h3>Flutter</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
       </div>
       <footer id="home-footer">
         <p>Designed and Developed // Randy MacLean 2021</p>
