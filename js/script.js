@@ -21,20 +21,20 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 825 || document.documentElement.scrollTop > 825) {
-        document.getElementById("homepage-header").style.fontSize = "25px";
-        document.getElementById("homepage-header").style.height = "115px";
-        document.getElementById("homepage-header").style.justifyContent = "space-between";
-        document.getElementById("homepage-header").style.zIndex= "1";
-        document.getElementById("homepage-header").style.backgroundColor = "rgba(255,255,255, 0.75)";
+        document.getElementById("main-header").style.fontSize = "25px";
+        document.getElementById("main-header").style.height = "115px";
+        document.getElementById("main-header").style.justifyContent = "space-between";
+        document.getElementById("main-header").style.zIndex= "1";
+        document.getElementById("main-header").style.backgroundColor = "rgba(255,255,255, 0.75)";
         document.getElementsByTagName("a")[0].style.color = "rgb(34,33,33)";
         document.getElementsByTagName("a")[1].style.color = "rgb(34,33,33)";
         document.getElementsByTagName("a")[2].style.color = "rgb(34,33,33)";
         document.getElementById("logo").src = "../img/red-logo-2.png";
         
     } else {
-        document.getElementById("homepage-header").style.fontSize = "25px";
-        document.getElementById("homepage-header").style.height = "200px";
-        document.getElementById("homepage-header").style.backgroundColor = "transparent";
+        document.getElementById("main-header").style.fontSize = "25px";
+        document.getElementById("main-header").style.height = "200px";
+        document.getElementById("main-header").style.backgroundColor = "transparent";
         document.getElementsByTagName("a")[0].style.color = "white";
         document.getElementsByTagName("a")[1].style.color = "white";
         document.getElementsByTagName("a")[2].style.color = "white";
