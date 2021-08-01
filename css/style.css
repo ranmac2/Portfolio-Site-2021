@@ -577,13 +577,7 @@ textarea {
   height: 1200px;
 }
 
-.portfolio-card {
-  height: 800px;
-  width: 90%;
-  margin-left: 100px;
-}
-
-.portfolio-card h1 {
+#portfolio-main h1 {
   margin: 0;
   font-family: glacial-indifference;
   font-size: 35px;
@@ -591,25 +585,37 @@ textarea {
   padding-top: 200px;
 }
 
+.portfolio-card {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  margin: 50px 50px 0px 50px;
+}
+
 /* Style the tab */
 .tab {
-  float: left;
+  display: block;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   width: 30%;
   height: 300px;
+  padding-top: 50px;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: inherit;
   color: black;
   padding: 22px 16px;
   width: 100%;
   border: none;
   outline: none;
-  text-align: left;
+  font-family: glacial-indifference;
+  font-size: 25px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -626,8 +632,8 @@ textarea {
 
 /* Style the tab content */
 .tabcontent {
-  float: left;
-  padding: 0px 12px;
+  padding: 50px 12px 0px 0px;
+  background-color: rgb(233, 231, 231);
   border: 1px solid #ccc;
   width: 70%;
   border-left: none;

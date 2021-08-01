@@ -3,7 +3,11 @@
   <head>
     <title>Randy MacLean | Portfolio 2021</title>
     <link href="../css/style.css" rel="stylesheet" />
-    <script type="text/javascript" src="../js/script.js" defer></script>
+    <script
+      type="text/javascript"
+      src="../js/portfolio-page-script.js"
+      defer
+    ></script>
   </head>
   <body>
     <header>
@@ -25,8 +29,8 @@
       </div>
     </header>
     <main id="portfolio-main">
+      <h1>Check Out My Work</h1>
       <div class="portfolio-card">
-        <h1>Check Out My Work</h1>
         <div class="tab">
           <button class="tablinks" onclick="openProjects(event, 'html-css-js')">
             HTML/CSS/JS
@@ -40,8 +44,64 @@
         </div>
 
         <div id="html-css-js" class="tabcontent">
-          <h3>HTML/CSS/JS</h3>
-          <p>London is the capital city of England.</p>
+          <div class="project">
+            <div class="project-description">
+              <h2>-Unplugged-</h2>
+              <p>
+                A website I created for a fictional business offering team
+                building retreats for workers in the tech sector. It was built
+                using HTML and CSS.
+              </p>
+            </div>
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
+                    id="unplugged-thumbnail"
+                    src="../img/unplugged-laptop.png"
+                    alt="unplugged-thumbnail"
+                  />
+                </div>
+                <div class="flip-box-back">
+                  <a
+                    href="https://ranmac2.github.io/unplugged-site/"
+                    target="_BLANK"
+                    ><div class="thumbnail-text">
+                      <p>Click Here to View</p>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
+                    src="../img/portfolio-laptop.png"
+                    alt="portfolio-thumbnail"
+                  />
+                </div>
+                <div class="flip-box-back">
+                  <a
+                    href="https://ranmac2.github.io/New-Portfolio-Site/"
+                    target="_BLANK"
+                    ><div class="thumbnail-text">
+                      <p>Click Here to View</p>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-description">
+              <h2>-Portfolio-</h2>
+              <p>
+                A website I created as a self portfolio. It was built using
+                HTML, CSS, and, PHP.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div id="react" class="tabcontent">
