@@ -573,23 +573,40 @@ textarea {
 #portfolio-main {
   background-image: url("../img/background-bridge.jpg");
   background-attachment: fixed;
-  background-size: cover;
-  height: 1200px;
+  height: 100%;
+}
+
+#portfolio-header {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 25px;
+  width: 100%;
+  animation: homepageTransitionIn 2s;
+  position: fixed;
 }
 
 #portfolio-main h1 {
   margin: 0;
   font-family: glacial-indifference;
-  font-size: 35px;
+  font-size: 50px;
+  color: white;
   text-align: center;
-  padding-top: 200px;
+  position: relative;
+  top: 150px;
+  left: 31%;
+  display: block;
+  background-color: rgb(255, 22, 22);
+  border: 3px solid white;
+  width: 500px;
 }
 
 .portfolio-card {
   height: 800px;
   display: flex;
   justify-content: center;
-  margin: 50px 50px 0px 50px;
+  margin: 200px 50px 0px 50px;
 }
 
 /* Style the tab */
@@ -637,7 +654,8 @@ textarea {
   border: 1px solid #ccc;
   width: 70%;
   border-left: none;
-  height: 300px;
+  height: 90%;
+  overflow: auto;
 }
 
 /******************** KEYFRAMES ********************/
