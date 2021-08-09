@@ -591,7 +591,7 @@ textarea {
 }
 
 #portfolio-main h1 {
-  margin: 0;
+  margin: 0 auto;
   font-family: nickainley;
   font-size: 50px;
   font-weight: 300;
@@ -599,7 +599,6 @@ textarea {
   text-align: center;
   position: relative;
   top: 165px;
-  left: 31%;
   display: block;
   background-color: rgb(255, 22, 22);
   border: 3px solid rgb(34, 33, 33);
