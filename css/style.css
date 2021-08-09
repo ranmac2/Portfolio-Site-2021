@@ -445,6 +445,16 @@ nav ul li a {
   padding: 25px 0 0 25px;
 }
 
+.contact-content p {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 60px;
+  font-family: glacial-indifference;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -547,7 +557,7 @@ textarea {
 
 #home-footer {
   background-color: white;
-  height: 15px;
+  height: 50px;
   width: 100%;
 }
 
@@ -555,7 +565,8 @@ textarea {
   font-family: glacial-indifference;
   font-size: 12px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  padding-top: 20px;
   color: rgb(34, 33, 33);
 }
 
