@@ -462,7 +462,6 @@ nav ul li a {
   justify-content: center;
   padding: 35px;
   margin-top: 75px;
-  margin-right: 50px;
   margin-bottom: 60px;
   width: 350px;
 }
@@ -519,16 +518,16 @@ textarea {
   padding-bottom: 250px;
 }
 
+.social-media-icons {
+  text-align: center;
+}
+
 .contact-paragraph {
   font-family: glacial-indifference;
   color: white;
   font-size: 30px;
   text-align: center;
   width: 400px;
-}
-
-.social-media-icons {
-  display: block;
 }
 
 #github-thumbnail {
