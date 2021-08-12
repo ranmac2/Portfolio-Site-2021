@@ -273,7 +273,12 @@
                 >randy_maclean@hotmail.ca</a
               >, or fill out the following contact form.
             </p>
-            <form id="contact-form" onsubmit="return false">
+            <form
+              id="contact-form"
+              action="mailto:randy_maclean@hotmail.ca"
+              method="get"
+              enctype="text/plain"
+            >
               <input
                 type="text"
                 placeholder="Enter your first name"
@@ -290,9 +295,7 @@
               <br />
               <textarea> </textarea>
               <br />
-              <a class="email" href="mailto:randy_maclean@hotmail.ca"
-                >-Shoot me a message-</a
-              >
+              <input type="submit" name="submit" value="Send  Message" />
             </form>
             <div id="social-media">
               <div class="social-media-icons">

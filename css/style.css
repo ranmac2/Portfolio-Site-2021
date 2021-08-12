@@ -124,6 +124,7 @@ nav ul li a {
   height: 550px;
   width: 550px;
   position: absolute;
+  opacity: 0.9;
 }
 
 #inner-circle {
