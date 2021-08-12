@@ -448,11 +448,15 @@ nav ul li a {
 
 .contact-content p {
   width: 75%;
-  margin: 0 auto;
-  padding-top: 60px;
+  margin: 60px auto;
+  padding: 20px;
   font-family: glacial-indifference;
   font-size: 25px;
   color: white;
+  background-color: rgb(255, 22, 22);
+  border: 3px solid white;
+  border-radius: 4px;
+  opacity: 0.9;
   text-align: center;
 }
 
@@ -478,6 +482,7 @@ input {
   border: 1.5px solid white;
   border-radius: 4px;
   padding: 5px;
+  margin: 5px;
 }
 
 ::placeholder {
@@ -493,6 +498,7 @@ textarea {
   border: 1.5px solid white;
   border-radius: 4px;
   padding: 5px;
+  margin-top: 5px;
   resize: vertical;
 }
 
@@ -508,6 +514,7 @@ textarea {
   border-radius: 4px;
   text-decoration: none;
   padding: 5px;
+  margin-top: 10px;
   transition: transform 0.2s;
 }
 

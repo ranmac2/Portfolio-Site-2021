@@ -275,27 +275,14 @@
             </p>
             <form
               id="contact-form"
-              action="mailto:randy_maclean@hotmail.ca"
-              method="get"
-              enctype="text/plain"
+              action="https://formspree.io/f/mgerpejo"
+              method="POST"
             >
-              <input
-                type="text"
-                placeholder="Enter your first name"
-                id="first-name"
-              />
-              <br />
-              <input
-                type="text"
-                placeholder="Enter your last name"
-                id="last-name"
-              />
-              <br />
-              <input type="email" placeholder="Enter your email" id="email" />
-              <br />
-              <textarea> </textarea>
-              <br />
-              <input type="submit" name="submit" value="Send  Message" />
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Subject" />
+              <input type="email" name="_replyto" placeholder="Enter email" />
+              <textarea name="message" placeholder="Your Message"></textarea>
+              <button class="email" type="submit">Send Message</button>
             </form>
             <div id="social-media">
               <div class="social-media-icons">
