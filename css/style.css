@@ -626,14 +626,12 @@ textarea {
 .portfolio-card {
   height: 800px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 150px 50px 0px 50px;
+  margin: 50px 50px 0px;
 }
 
 .tab {
-  display: block;
   border: 5px double white;
   border-radius: 4px;
   background-color: rgb(255, 22, 22);
@@ -671,6 +669,7 @@ textarea {
 }
 
 .tabcontent {
+  margin-top: 160px;
   padding: 50px 12px 0px 0px;
   background-color: rgb(233, 231, 231);
   border: 5px double white;
@@ -701,7 +700,7 @@ textarea {
 
 .portfolio-social-media-icons {
   text-align: center;
-  margin-top: 75px;
+  margin-top: -50px;
 }
 
 .portfolio-social-media-icons a {
