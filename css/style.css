@@ -700,7 +700,8 @@ textarea {
 
 .portfolio-social-media-icons {
   text-align: center;
-  margin-top: -50px;
+  margin-top: -100px;
+  padding-bottom: 25px;
 }
 
 .portfolio-social-media-icons a {
