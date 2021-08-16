@@ -10,15 +10,6 @@
   src: url("../fonts/GlacialIndifference-Regular.otf");
 }
 
-@font-face {
-  font-family: komika;
-  src: url("../fonts/KOMIKAX_.ttf");
-}
-
-@font-face {
-  font-family: qiba;
-  src: url("../fonts/qiba-serif-2.ttf");
-}
 /******************** MAIN STYLES ********************/
 
 html {
@@ -308,12 +299,6 @@ nav ul li a {
   width: 100%;
 }
 
-#about-me hr {
-  border-top: 2px solid rgb(34, 33, 33);
-  width: 45%;
-  margin-left: 42%;
-}
-
 .about-header {
   display: flex;
   flex-direction: row;
@@ -344,17 +329,47 @@ nav ul li a {
   transition: 0.2s;
 }
 
+.description-and-picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.description-and-picture p {
+  font-family: glacial-indifference;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(34, 33, 33);
+  height: 200px;
+  margin: 55px 50px 0;
+  padding: 50px 25px 0;
+}
+
+.profile-pic {
+  height: 300px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin: 75px 30px 0 50px;
+}
+
+#about-me hr {
+  border-top: 2px solid rgb(34, 33, 33);
+  width: 45%;
+  margin-top: 50px;
+  margin-left: 47%;
+}
+
 .language-icons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 70px;
+  margin: 70px 50px 0;
 }
 
 .language-logo img {
-  height: 150px;
-  width: 150px;
+  height: 125px;
+  width: 125px;
   transition: transform 0.2s;
 }
 
@@ -374,29 +389,6 @@ nav ul li a {
   font-weight: 300;
   color: rgb(34, 33, 33);
   margin: 0 auto;
-}
-
-.description-and-picture {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.description-and-picture p {
-  font-family: glacial-indifference;
-  font-size: 20px;
-  text-align: center;
-  color: rgb(34, 33, 33);
-  height: 200px;
-  margin: 100px 50px 0;
-  padding: 50px 25px 0;
-}
-
-.profile-pic {
-  height: 300px;
-  border: 3px solid white;
-  border-radius: 50%;
-  margin: 75px 30px 0 50px;
 }
 
 /******************** CONTACT ********************/
@@ -751,5 +743,24 @@ textarea {
 
   to {
     opacity: 1;
+  }
+}
+
+/******************** MEDIA QUERIES ********************/
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .description-and-picture p {
+    margin: 100px 50px 0;
+  }
+
+  #about-me hr {
+    margin-top: 15px;
+    margin-left: 42%;
+  }
+
+  .language-logo img {
+    height: 150px;
+    width: 150px;
   }
 }
