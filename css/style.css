@@ -301,7 +301,8 @@ nav ul li a {
 .project-description {
   width: 40%;
   margin-left: 20px;
-  margin-top: 25px;
+  margin-top: 15px;
+  margin-right: 75px;
   text-align: center;
 }
 
@@ -366,7 +367,7 @@ nav ul li a {
   font-family: nickainley;
   font-size: 35px;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 55px;
 }
 
 .portfolio-btn {
@@ -662,7 +663,7 @@ textarea {
 
 .tabcontent {
   margin-top: 140px;
-  padding: 50px 12px 0px 0px;
+  padding: 50px 0px 0px 0px;
   background-color: rgb(233, 231, 231);
   border: 5px double white;
   width: 70%;
@@ -671,16 +672,37 @@ textarea {
   opacity: 0.9;
 }
 
-.tabcontent p {
-  margin-left: 50px;
+.portfolio-project-description {
+  /* width: 40%; */
+  margin-top: 15px;
+  text-align: center;
+}
+
+.portfolio-project-description h2 {
+  font-family: glacial-indifference;
+  font-size: 25px;
+  margin-top: -5px;
+  margin-left: 25px;
+  width: 100%;
+}
+
+.portfolio-project-description p {
+  font-family: glacial-indifference;
+  font-size: 16px;
+  margin-left: 25px;
+  width: 100%;
+}
+
+/* .tabcontent p {
+  margin-left: 25px;
   width: 100%;
 }
 
 .tabcontent h2 {
   margin-top: -5px;
-  margin-left: 50px;
+  margin-left: 25px;
   width: 100%;
-}
+} */
 
 .flip-box-back h3 {
   color: white;
@@ -688,7 +710,7 @@ textarea {
   font-size: 35px;
   font-weight: 300;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 55px;
 }
 
 .portfolio-social-media-icons {
@@ -766,8 +788,17 @@ textarea {
     width: 150px;
   }
 
+  .project {
+    width: 80%;
+  }
+
   .project-description {
     margin-top: 50px;
+    margin-right: 0px;
+  }
+
+  .flip-box-back p {
+    margin-top: 90px;
   }
 
   .portfolio-card {
@@ -799,6 +830,25 @@ textarea {
   .flip-box-front img {
     width: 375px;
     height: 245px;
+  }
+
+  .flip-box-front {
+    width: 375px;
+    height: 245px;
+  }
+
+  .flip-box-back {
+    width: 375px;
+    height: 245px;
+  }
+
+  .flip-box-inner {
+    width: 375px;
+    height: 245px;
+  }
+
+  .flip-box-back h3 {
+    margin-top: 90px;
   }
 
   .portfolio-social-media-icons {
